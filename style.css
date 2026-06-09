@@ -824,50 +824,9 @@ p:last-child { margin-bottom: 0; }
 		margin-bottom: 32px;
 	}
 
-	/* Transparent header over hero on mobile */
-	.site-header {
-		background: transparent;
-		backdrop-filter: none;
-		box-shadow: none;
-	}
-
-	.logo {
-		color: #fff;
-	}
-
-	.logo-img {
-		filter: brightness(0) invert(1);
-	}
-
-	/* Hamburger visible — positioned on hero */
+	/* Hamburger visible in header */
 	.nav-toggle-label {
 		display: flex;
-		position: fixed;
-		top: 16px;
-		right: 20px;
-		padding: 6px;
-		background: rgba(0,0,0,0.2);
-		border-radius: 8px;
-	}
-
-	.nav-toggle-label span {
-		background: #fff;
-	}
-
-	/* When nav opens, hamburger reverts to dark */
-	.nav-toggle:checked ~ .nav-toggle-label {
-		background: transparent;
-	}
-
-	.nav-toggle:checked ~ .nav-toggle-label span {
-		background: #2A2A2A;
-	}
-
-	/* Nav drops from top of viewport when toggled */
-	.navbar {
-		top: 0;
-		padding-top: 64px;
-		border-radius: 0 0 12px 12px;
 	}
 
 	.navbar {
