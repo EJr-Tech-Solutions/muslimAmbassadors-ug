@@ -327,6 +327,11 @@
 
 	</main>
 
+	<div id="lightbox" class="lightbox" onclick="closeLightbox(event)" role="dialog" aria-label="Image fullscreen view">
+		<button class="lightbox-close" onclick="closeLightbox();event.stopPropagation()" aria-label="Close">&times;</button>
+		<img class="lightbox-image" id="lightbox-image" src="" alt="" />
+	</div>
+
 	<footer class="site-footer">
 		<div class="container">
 			<svg class="footer-crescent" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
@@ -421,6 +426,33 @@
 
 		document.querySelectorAll('section[id]').forEach(function(section) {
 			sectionObserver.observe(section);
+		});
+
+		/* Lightbox */
+		var lightbox = document.getElementById('lightbox');
+		var lightboxImg = document.getElementById('lightbox-image');
+
+		document.querySelectorAll('.gallery-img, .about-img, .img-rounded, .gallery-item img, .testimonial-photo').forEach(function(img) {
+			img.addEventListener('click', function(e) {
+				e.stopPropagation();
+				lightboxImg.src = this.src;
+				lightboxImg.alt = this.alt || '';
+				lightbox.classList.add('open');
+				document.body.style.overflow = 'hidden';
+			});
+			img.style.cursor = 'pointer';
+		});
+
+		function closeLightbox(e) {
+			if (e && e.target === lightboxImg) return;
+			lightbox.classList.remove('open');
+			document.body.style.overflow = '';
+		}
+
+		document.addEventListener('keydown', function(e) {
+			if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+				closeLightbox();
+			}
 		});
 	</script>
 
