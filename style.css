@@ -758,6 +758,7 @@ p:last-child { margin-bottom: 0; }
 .footer-crescent {
 	display: block;
 	margin: 0 auto 12px;
+	line-height: 1;
 }
 
 .site-footer h3 {
