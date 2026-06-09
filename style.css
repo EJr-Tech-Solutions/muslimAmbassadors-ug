@@ -1,0 +1,20 @@
+body{
+    font-family:Arial, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing:0.5px;
+    color: #333333;
+}
+.section-box{
+    background-color:#ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.core-values-section{
+    background-color: #FDFBF7;
+}
