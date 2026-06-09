@@ -835,6 +835,10 @@ p:last-child { margin-bottom: 0; }
 		color: #fff;
 	}
 
+	.logo-img {
+		filter: brightness(0) invert(1);
+	}
+
 	/* Hamburger visible — positioned on hero */
 	.nav-toggle-label {
 		display: flex;
