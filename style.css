@@ -857,24 +857,6 @@ p:last-child { margin-bottom: 0; }
 	.video-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
-}
-
-/* ========== BREAKPOINT: 600px ========== */
-@media (max-width: 600px) {
-	h1 { font-size: 32px; }
-	h2 { font-size: 26px; }
-	h3 { font-size: 19px; }
-
-	.section,
-	.donate-section,
-	#testimonials {
-		padding: 56px 0;
-	}
-
-	.section-lead {
-		font-size: 16px;
-		margin-bottom: 32px;
-	}
 
 	/* Hamburger visible in header */
 	.nav-toggle-label {
@@ -907,6 +889,24 @@ p:last-child { margin-bottom: 0; }
 
 	.navbar a:last-child {
 		border-bottom: none;
+	}
+}
+
+/* ========== BREAKPOINT: 600px ========== */
+@media (max-width: 600px) {
+	h1 { font-size: 32px; }
+	h2 { font-size: 26px; }
+	h3 { font-size: 19px; }
+
+	.section,
+	.donate-section,
+	#testimonials {
+		padding: 56px 0;
+	}
+
+	.section-lead {
+		font-size: 16px;
+		margin-bottom: 32px;
 	}
 
 	/* Hero */
